@@ -16,9 +16,6 @@ try:
     from sselogsumexp import logsumexp
 except ImportError:
     from scipy.misc import logsumexp
-    print("Use scipy logsumexp().")
-else:
-    print("Use SSE accelerated logsumexp().")
 
 
 def _dynamic_programming(f, *args, **kwargs):
